@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Secure SME</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .input-box {
+            margin-top: 50px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="index.html">Secure SME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content-->
+    <div class="container px-4 px-lg-5">
+        <!-- Heading Row --> 
+        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="phishingraw.jpg" alt="Password on screen" style="max-height: 400px; width: auto; display: block; margin: 0 auto;"/></div>
+            <div class="col-lg-5">
+                <h1 class="font-weight-light">Preventing Phising attacks</h1>
+                <p>Protecting yourself and your company from phishing attacks.</p>
+            </div>
+        </div>
+
+        <hr style="border: 1px solid black;"><br>
+
+        <!-- Page Body -->
+        <!-- Page Body -->
+        <h1>What is Phishing</h1>
+        <p>Phishing is a form a crime where the primary goal is to gain access to information by taking advantage of peoples natural trust and is a leading cause of data breaches.</p>
+        <p>A typical example of a phishing attack is where attackers send out unsolicited emails to victims usually with some urgency or with promises that are generally too good to be true. </p>
+        <p>More information is available from <a href="https://www.phishing.org/">Phishing.org</a></p>
+        <br>
+
+        <h1>Avoiding Phishing Attacks</h1>
+        <p>Phishing can be completely avoided by approaching all emails and communications with a zero trust approach. 
+            This means that when you get an email or message you <b>do not trust the information, contents, attachments, or links.</b>
+            This method of not trusting anything is somewhat impractical, since there are perfectly reasonable uses for emails or messages.
+            <h3> The Compromise</h3>
+        <p>The compromise is to build trust in the sender by investigating the email or message. Consider all of the following before trusting it:
+            <ul>
+                <li>Try to view the email or message <a href="https://dictionary.cambridge.org/dictionary/english/dispassionately">dispassionately</a>.</li>
+                <li>Who is the sender: Do you know them? Is someone impersonating them? Is the address using non-ACKII characters when they should not? <i>Copy and Paste</i> the email <a href="https://shawkui.github.io/tools/ascii_checker.html">here</a> to find out if there are non-ASCII characters. </li>
+                <li>Does the message contain a sense of urgency?</li>
+                <li>What time was it sent</li>
+                <li>What is the spelling, punctuation, and grammar like? Could they be using a translation app?</li>
+                <li>Does it have attachments? Should it have attachments?</li>
+                <li>Are there links that when hovering over them, a different link shows up in the bottom left of the screen. (do not click on it to do this)</li>
+                <li>Does it have any personal information like your name, a code word, section of a card number, or postcode? <i>All UK banks will add something identifiable like this.</i></li>
+                <li>Do you still have a bad feeling about it? Intuition is not scientific but if after all these tests and you are not confident then do not trust it.</li>
+            </ul>
+            There is no end to the creative attempts at phishing, this is not an exhaustive list but should significantly reduce the odds of falling victim to a phishing attack.
+        </p>
+        </p>
+        <p>More information is available from the <a href="https://www.ncsc.gov.uk/collection/phishing-scams">National Cyber Security Center</a>.</p>
+        <br>
+        <hr style="border: 1px solid black;"><br>
+
+        <h1>Test your knowledge</h1> 
+
+          <!--provide key-->
+          <div id="completionKey" class="mt-4"></div>
+
+<!-- Questions -->
+<div class="row gx-4 gx-lg-5">
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="card-title">Question 1</h2>
+                <p class="card-text">What are attackers trying to access with phishing?</p><br>
+                <input type="text" id="userInput1" class="form-control" placeholder="*********** or ****">
+                <button id="checkButton1" class="btn btn-primary mt-3">Check</button>
+                <div id="result1" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="card-title">Question 2</h2>
+                <p class="card-text">What is the name of the appropriate approach to unrecognised emails or messages?</p>
+                <input type="text" id="userInput2" class="form-control" placeholder="**** *****">
+                <button id="checkButton2" class="btn btn-primary mt-3">Check</button>
+                <div id="result2" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <div class="card-body">
+                <h2 class="card-title">Question 3</h2>
+                <p class="card-text">What should you check for in the senders email address?</p>
+                <input type="text" id="userInput3" class="form-control" placeholder="***-***** **********">
+                <button id="checkButton3" class="btn btn-primary mt-3">Check</button>
+                <div id="result3" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+        <br>
+        <br>
+        <br>
+
+        <!-- Footer-->
+        <footer style="width: 100%; position: absolute; left: 0; right: 0; bottom: 1;" class="py-5 bg-dark">
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="row">
+                    <div class="col-md-4 text-white">
+                        <h5>Disclaimer</h5>
+                        <p>This website only provides general advice and guidance. It is not a substitute for formal professional or legal consultation.</p>
+                    </div>
+                    <div class="col-md-4 text-white">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                            <li><a href="faq.html" class="text-white text-decoration-none">FAQ</a></li>
+                            <li><a href="termsandconditions.html" class="text-white text-decoration-none">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 text-white">
+                        <h5>Contact</h5>
+                        <a href="mailto:alex@securesme.co.uk" class="text-white text-decoration-none">Alex@SecureSME.co.uk</a>
+                    </div>
+                </div>
+                <div class="text-center mt-4 text-white">
+                    <p class="m-0">Copyright &copy; Secure SME 2024</p>
+                    <p class="m-0">Made in Wales as part of a BSc Computer Security degree</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+        <!-- Input Validation Script -->
+<!-- JavaScript for Input Validation -->
+<script>
+// Variables to track correct answers
+let isQuestion1Correct = false;
+let isQuestion2Correct = false;
+let isQuestion3Correct = false;
+
+// Function to check if all questions are correct
+function checkCompletion() {
+    if (isQuestion1Correct && isQuestion2Correct && isQuestion3Correct) {
+        document.getElementById('completionKey').innerHTML = `
+            <div class="alert alert-success">
+                Congratulations! You answered all 3 questions correctly.<br>
+                Your key is: <strong>Gone Phishing</strong>
+            </div>`;
+    }
+}
+
+// Function to check the answer and update the correct answer status
+function checkAnswer(userInput, correctAnswers, resultDiv, nextInputId, questionIndex) {
+    // Check if the user input matches any of the correct answers
+    if (correctAnswers.includes(userInput.toLowerCase())) {
+        resultDiv.innerHTML = '<div class="alert alert-success">Correct!</div>';
+        // Move to the next input field if provided
+        if (nextInputId) {
+            document.getElementById(nextInputId).focus();
+        }
+        
+        // Update the correct answer status
+        if (questionIndex === 1) isQuestion1Correct = true;
+        if (questionIndex === 2) isQuestion2Correct = true;
+        if (questionIndex === 3) isQuestion3Correct = true;
+
+        return true;
+    } else {
+        resultDiv.innerHTML = '<div class="alert alert-danger">Incorrect. Please try again.</div>';
+        return false;
+    }
+}
+
+    document.getElementById('checkButton1').addEventListener('click', function() {
+        const userInput = document.getElementById('userInput1').value.trim();
+        const resultDiv = document.getElementById('result1');
+        // Accept both "10" and "ten" as correct answers
+        checkAnswer(userInput, ['information', 'info'], resultDiv, 'userInput2', 1); // Move to Question 2
+        checkCompletion();
+    });
+
+    document.getElementById('checkButton2').addEventListener('click', function() {
+        const userInput = document.getElementById('userInput2').value.trim();
+        const resultDiv = document.getElementById('result2');
+        checkAnswer(userInput, ['zero trust', 'no trust'], resultDiv, 'userInput3', 2); // Move to Question 3
+        checkCompletion();
+    });
+
+    document.getElementById('checkButton3').addEventListener('click', function() {
+        const userInput = document.getElementById('userInput3').value.trim();
+        const resultDiv = document.getElementById('result3');
+        checkAnswer(userInput, ['non-ascii characters', 'ascii', 'ascii characters'], resultDiv, null, 3); // No next input after Question 3
+        checkCompletion();
+    });
+
+    // Add event listeners for Enter key
+    document.getElementById('userInput1').addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            document.getElementById('checkButton1').click();
+        }
+    });
+
+    document.getElementById('userInput2').addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            document.getElementById('checkButton2').click();
+        }
+    });
+
+    document.getElementById('userInput3').addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            document.getElementById('checkButton3').click();
+        }
+    });
+
+    // Password Tester
+    document.getElementById('calculateEntropy').addEventListener('click', function() {
+    const password = document.getElementById('passwordInput').value.trim();
+    const resultDiv = document.getElementById('entropyResult');
+
+    if (password === "") {
+        resultDiv.innerHTML = '<div class="alert alert-danger">Please enter a password.</div>';
+        return;
+    }
+
+    // Calculate the character set size
+    let charsetSize = 0;
+    if (/[a-z]/.test(password)) charsetSize += 26; // Lowercase
+    if (/[A-Z]/.test(password)) charsetSize += 26; // Uppercase
+    if (/[0-9]/.test(password)) charsetSize += 10; // Numbers
+    if (/[\W_]/.test(password)) charsetSize += 32; // Special characters
+    if (/[\x80-\xFF]/.test(password)) charsetSize += 128; // Extended ASCII
+
+    // Calculate entropy
+    const entropy = Math.log2(charsetSize) * password.length;
+
+    // Display result
+    resultDiv.innerHTML = `
+        <div class="alert alert-info">
+            <strong>Entropy:</strong> ${entropy.toFixed(2)} bits<br>
+            <strong>Analysis:</strong> ${analyzeEntropy(entropy)}
+        </div>`;
+});
+
+// Provide feedback based on entropy
+function analyzeEntropy(entropy) {
+    if (entropy < 28) {
+        return "Very Weak (Consider revising your password)";
+    } else if (entropy < 35) {
+        return "Weak (Not recommended for sensitive accounts)";
+    } else if (entropy < 60) {
+        return "Moderate (Usable but could be improved)";
+    } else if (entropy < 80) {
+        return "Strong (Good for most purposes)";
+    } else {
+        return "Very Strong (Excellent security)";
+    }
+}
+
+</script>
+    </body>
+</html>
